@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 # Создаем модель для определения комментариев 
-classifier = pipeline(model="SkolkovoInstitute/russian_toxicity_classifier")
+classifier = pipeline(model="Helsinki-NLP/opus-mt-ru-en")
 # Формируем заголовок для браузера
 st.title("Приложение определения токсичный комментариев на русском языке")
 # Строчка для ввода текста 
